@@ -7,13 +7,27 @@ body {
   color: #222;
 }
 
-/* ================= HERO ================= */
+
+/* ================= HERO WITH BACKGROUND IMAGE ================= */
+
 .hero {
-  background: linear-gradient(135deg, #0b5ed7, #0aa2c0);
+  position: relative;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/budapest_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
+
+
 
 .hero h1 {
   font-size: 42px;
@@ -123,9 +137,46 @@ body {
 }
 
 /* ================= FOOTER ================= */
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 25px;
   background: #0b5ed7;
   color: white;
+}
+
+/* ================= ORGANIZER CARD ALIGNMENT FIX ================= */
+
+/* ================= ORGANIZER CARD ALIGNMENT FIX (REFINED) ================= */
+
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Affiliation text */
+.organizer-card p {
+  min-height: 44px;        /* keeps cards aligned */
+  margin: 8px 0 6px 0;     /* tighter vertical spacing */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Website link */
+.organizer-card a {
+  margin-top: 6px;         /* small, consistent gap */
+  font-weight: 600;
+  text-decoration: none;
+  color: #0b5ed7;
+}
+/* ================= SCHEMATIC IMAGE FIX ================= */
+
+.schematic-img {
+  display: block;
+  max-width: 100%;      /* never exceed the white box */
+  height: auto;         /* keep aspect ratio */
+  margin: 30px auto;    /* center horizontally */
+  border-radius: 12px;
 }
