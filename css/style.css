@@ -197,6 +197,25 @@ font-size:30px;
 font-size:18px;
 }
 
+.hero-sub{
+font-size:20px;
+font-weight:700;
+color:white;
+margin-bottom:15px;
+letter-spacing:0.3px;
+}
+
+.hero-sub a{
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+
+.hero-sub a:hover{
+color:white;
+text-decoration:underline;
+}
+
 .grid{
 grid-template-columns:1fr;
 }
