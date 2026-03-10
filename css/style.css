@@ -209,17 +209,17 @@ color:white;
 margin-top:60px;
 }
 
+
 footer a,
 footer a:link,
 footer a:visited{
-color:white;
+color:white !important;
 text-decoration:underline;
 }
 
 footer a:hover{
-color:#e6e6e6;
+color:#e6e6e6 !important;
 }
-
 /* ================= MOBILE ================= */
 
 @media(max-width:768px){
