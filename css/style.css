@@ -50,14 +50,16 @@ margin-bottom:15px;
 letter-spacing:0.3px;
 }
 
-.hero-sub a{
-color:white;
+.hero-sub a,
+.hero-sub a:link,
+.hero-sub a:visited{
+color:white !important;
 text-decoration:none;
 font-weight:700;
 }
 
 .hero-sub a:hover{
-color:white;
+color:white !important;
 text-decoration:underline;
 }
 
