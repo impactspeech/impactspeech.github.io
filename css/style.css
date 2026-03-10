@@ -12,20 +12,15 @@ body {
 
 .hero {
   position: relative;
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
-    ),
-    url("../images/Budapest-Parliament-0001.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("../images/Budapest-Parliament-0001.jpg") center/cover no-repeat;
 
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
+
 
 .hero h1 {
   font-size: 42px;
