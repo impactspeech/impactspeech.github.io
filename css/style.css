@@ -1,232 +1,207 @@
 /* ================= GLOBAL ================= */
 
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #e6eaf0;
-  color: #222;
+body{
+margin:0;
+font-family: "Inter","Helvetica Neue",Arial,sans-serif;
+line-height:1.6;
+background:#e6eaf0;
+color:#222;
 }
 
 /* ================= HERO ================= */
 
-.hero {
-  position: relative;
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("../images/Budapest-Parliament-0001.jpg") center/cover no-repeat;
+.hero{
+position:relative;
+background:
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url("../images/Budapest-Parliament-0001.jpg");
 
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+color:white;
+text-align:center;
+
+padding:140px 20px;
 }
 
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+.hero-content{
+max-width:900px;
+margin:auto;
 }
 
-.hero h2 {
-  font-weight: 300;
-  max-width: 900px;
-  margin: 0 auto 30px;
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-weight:300;
+max-width:900px;
+margin:0 auto 30px;
 }
 
 /* ================= BUTTONS ================= */
 
-.hero-buttons .btn {
-  margin: 6px;
+.hero-buttons .btn{
+margin:6px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 18px;
-  background: white;
-  color: #0b5ed7;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-outline {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+.btn{
+display:inline-block;
+padding:10px 18px;
+background:white;
+color:#0b5ed7;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
 }
 
 /* ================= SECTIONS ================= */
 
-.section {
-  max-width: 1000px;
-  margin: 70px auto;
-  padding: 0;
+.section{
+max-width:1000px;
+margin:60px auto;
+padding:0 20px;
 }
 
-.section-inner {
-  background-color: #ffffff;
-  padding: 60px 40px;
-  border-radius: 14px;
-  border: 1px solid #dfe3e8;
+.section-inner{
 
-  box-shadow:
-    0 2px 6px rgba(0,0,0,0.05),
-    0 14px 40px rgba(0,0,0,0.08);
+background:white;
+
+padding:40px;
+
+border-radius:12px;
+
+box-shadow:
+0 2px 6px rgba(0,0,0,0.05),
+0 14px 40px rgba(0,0,0,0.08);
+
 }
 
 /* ================= HEADINGS ================= */
 
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #111;
+.section h2{
+text-align:center;
+margin-bottom:30px;
 }
 
-.section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #0b5ed7;
-  margin: 12px auto 0;
-  border-radius: 2px;
+.section h2::after{
+content:"";
+display:block;
+width:60px;
+height:3px;
+background:#0b5ed7;
+margin:12px auto 0;
+border-radius:2px;
 }
 
 /* ================= TEXT ================= */
 
 .section p,
-.section li {
-  color: #333;
+.section li{
+color:#333;
 }
 
-ul {
-  padding-left: 20px;
-  margin-left: 0;
+ul{
+padding-left:22px;
+margin:10px 0;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-/* ================= THEMES ================= */
-
-.themes li {
-  margin-bottom: 12px;
+li{
+margin-bottom:10px;
 }
 
 /* ================= GRID LAYOUT ================= */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
 }
 
-/* ================= CARDS ================= */
+/* ================= SPEAKER / ORGANIZER CARDS ================= */
 
-.card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+.speaker{
+
+text-align:center;
+
 }
 
-.card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+.speaker img{
+
+width:120px;
+height:120px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+display:block;
+
+margin:0 auto 10px;
+
+}
+
+.speaker h3{
+margin:8px 0 4px 0;
+font-size:17px;
+}
+
+.speaker p{
+font-size:14px;
+margin:0;
 }
 
 /* ================= PROGRAM COMMITTEE ================= */
 
-.pc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 40px;
-}
+.pc-grid{
 
-/* ================= ORGANIZER CARD ================= */
+display:grid;
 
-.organizer-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
+grid-template-columns:1fr 1fr;
 
-.organizer-card p {
-  min-height: 44px;
-  margin: 8px 0 6px 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
+gap:8px 40px;
 
-.organizer-card a {
-  margin-top: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #0b5ed7;
-}
-
-/* ================= IMAGE FIX ================= */
-
-.schematic-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 12px;
 }
 
 /* ================= FOOTER ================= */
 
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #0b5ed7;
-  color: white;
+footer{
+text-align:center;
+padding:25px;
+background:#0b5ed7;
+color:white;
+margin-top:60px;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE ================= */
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-  .hero {
-    padding: 70px 20px;
-  }
+.hero{
+padding:80px 20px;
+}
 
-  .hero h1 {
-    font-size: 30px;
-  }
+.hero h1{
+font-size:30px;
+}
 
-  .hero h2 {
-    font-size: 18px;
-    line-height: 1.4;
-  }
+.hero h2{
+font-size:18px;
+}
 
-  .hero-buttons .btn {
-    display: block;
-    margin: 8px auto;
-    max-width: 220px;
-  }
+.grid{
+grid-template-columns:1fr;
+}
 
-  .section {
-    margin: 40px 15px;
-  }
+.pc-grid{
+grid-template-columns:1fr;
+}
 
-  .section-inner {
-    padding: 30px 20px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pc-grid {
-    grid-template-columns: 1fr;
-  }
+.section-inner{
+padding:25px;
+}
 
 }
