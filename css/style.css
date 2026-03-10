@@ -1,192 +1,228 @@
-body{
-margin:0;
-font-family:"Inter",sans-serif;
-background:#edf1f6;
-color:#222;
-line-height:1.6;
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e6eaf0;
+  color: #222;
 }
 
-.hero{
-background-image:url("../images/Budapest-Parliament-0001.jpg");
-background-size:cover;
-background-position:center 35%;
-height:400px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-position:relative;
-color:white;
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/budapest_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:rgba(0,0,0,0.22);
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
-.hero-content{
-position:relative;
-z-index:2;
-max-width:1000px;
-margin:0 auto;
+.hero h2 {
+  font-weight: 300;
+  max-width: 900px;
+  margin: 0 auto 30px;
 }
 
-.hero h1{
-font-size:64px;
-font-weight:700;
-margin:0 0 18px 0;
-letter-spacing:0.5px;
-text-shadow:0 2px 8px rgba(0,0,0,0.35);
+/* ================= BUTTONS ================= */
+
+.hero-buttons .btn {
+  margin: 6px;
 }
 
-.hero h2{
-font-size:26px;
-font-weight:600;
-color:#ffffff;
-text-shadow:0 2px 6px rgba(0,0,0,0.45);
-line-height:1.5;
-max-width:900px;
-margin:auto;
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: white;
+  color: #0b5ed7;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-/* BUTTONS */
-
-.hero-buttons{
-margin-top:30px;
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
 }
 
-.btn{
-background:white;
-color:#0f5d86;
-padding:12px 20px;
-margin:5px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-display:inline-block;
+/* ================= SECTIONS ================= */
+
+.section {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 0;
 }
 
-/* WELCOME */
+.section-inner {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  border-radius: 14px;
+  border: 1px solid #dfe3e8;
 
-.welcome{
-background:#eef3fb;
-padding:40px 20px;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.05),
+    0 14px 40px rgba(0,0,0,0.08);
 }
 
-.welcome h2{
-text-align:center;
-margin-bottom:20px;
+/* ================= HEADINGS ================= */
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
 }
 
-.emnlp{
-text-align:center;
-font-weight:600;
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0b5ed7;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
-.emnlp a{
-color:#0f5d86;
-text-decoration:none;
+/* ================= TEXT ================= */
+
+.section p,
+.section li {
+  color: #333;
 }
 
-/* CONTAINER */
+/* ================= THEMES ================= */
 
-.container{
-max-width:1100px;
-margin:auto;
+.themes li {
+  margin-bottom: 12px;
 }
 
-/* CARD */
+/* ================= GRID LAYOUT ================= */
 
-.card{
-background:white;
-padding:50px;
-border-radius:12px;
-box-shadow:0 6px 20px rgba(0,0,0,0.06);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
 }
 
-/* SECTIONS */
+/* ================= CARDS ================= */
 
-.section{
-padding:60px 20px;
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.section h2{
-text-align:center;
-margin-bottom:30px;
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.section h2::after{
-content:"";
-display:block;
-width:60px;
-height:3px;
-background:#1e88c8;
-margin:10px auto;
+/* ================= PROGRAM COMMITTEE ================= */
+
+.pc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
 }
 
-/* GRID */
+/* ================= ORGANIZER CARD ================= */
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
-/* SPEAKERS */
-
-.speaker{
-text-align:center;
+.organizer-card p {
+  min-height: 44px;
+  margin: 8px 0 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-
-
-.speaker img{
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:10px;
-cursor:pointer;
-transition:0.2s;
+.organizer-card a {
+  margin-top: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0b5ed7;
 }
 
-.speaker img:hover{
-transform:scale(1.08);
+/* ================= IMAGE FIX ================= */
+
+.schematic-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 12px;
 }
 
-/* DATES */
+/* ================= FOOTER ================= */
 
-.dates li{
-margin-bottom:10px;
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0b5ed7;
+  color: white;
 }
 
-/* PC GRID */
+/* ================= MOBILE RESPONSIVE ================= */
 
+@media (max-width: 768px) {
 
-.pc-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px 40px;
-margin-top:20px;
-}
+  .hero {
+    padding: 70px 20px;
+  }
 
-.pc-grid p{
-margin:4px 0;
-font-size:15px;
-line-height:1.4;
-}
+  .hero h1 {
+    font-size: 30px;
+  }
 
-/* FOOTER */
+  .hero h2 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-footer{
-background:#0f5d86;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
+  .hero-buttons .btn {
+    display: block;
+    margin: 8px auto;
+    max-width: 220px;
+  }
+
+  .section {
+    margin: 40px 15px;
+  }
+
+  .section-inner {
+    padding: 30px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pc-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
