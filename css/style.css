@@ -248,7 +248,7 @@ letter-spacing:0.3px;
 
 .hero-sub a{
 color:white;
-text-decoration:none;
+text-decoration:underline;
 font-weight:700;
 }
 
