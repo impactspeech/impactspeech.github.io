@@ -104,6 +104,15 @@ body {
   color: #333;
 }
 
+ul {
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 /* ================= THEMES ================= */
 
 .themes li {
