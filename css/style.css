@@ -36,10 +36,12 @@ font-size:42px;
 margin-bottom:10px;
 }
 
+
 .hero h2{
-font-weight:300;
+font-weight:700;
 max-width:900px;
 margin:0 auto 30px;
+font-size:28px;
 }
 
 .hero-sub{
