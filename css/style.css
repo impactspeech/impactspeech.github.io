@@ -198,12 +198,26 @@ gap:4px 20px;
 
 /* ================= FOOTER ================= */
 
+
+/* ================= FOOTER ================= */
+
 footer{
 text-align:center;
 padding:25px;
 background:#0b5ed7;
 color:white;
 margin-top:60px;
+}
+
+footer a,
+footer a:link,
+footer a:visited{
+color:white;
+text-decoration:underline;
+}
+
+footer a:hover{
+color:#e6e6e6;
 }
 
 /* ================= MOBILE ================= */
