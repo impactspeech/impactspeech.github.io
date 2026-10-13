@@ -2,16 +2,63 @@
 
 body{
 margin:0;
-font-family: "Inter","Helvetica Neue",Arial,sans-serif;
+font-family:"Inter","Helvetica Neue",Arial,sans-serif;
 line-height:1.6;
 background:#e6eaf0;
 color:#222;
 }
 
+
+/* ================= NAVIGATION ================= */
+
+.navbar{
+max-width:1100px;
+margin:18px auto;
+padding:12px 24px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+background:white;
+border:1px solid #d8dce2;
+border-radius:40px;
+
+box-shadow:0 2px 8px rgba(0,0,0,0.04);
+
+box-sizing:border-box;
+}
+
+.nav-brand a{
+font-size:20px;
+font-weight:800;
+color:#111;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+.nav-links a{
+color:#444;
+font-weight:500;
+text-decoration:none;
+transition:color 0.2s ease;
+}
+
+.nav-links a:hover{
+color:#0b5ed7;
+}
+
+
 /* ================= HERO ================= */
 
 .hero{
 position:relative;
+
 background:
 linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
 url("../images/Budapest-Parliament-0001.jpg");
@@ -35,7 +82,6 @@ margin:auto;
 font-size:42px;
 margin-bottom:10px;
 }
-
 
 .hero h2{
 font-weight:800;
@@ -67,6 +113,7 @@ color:white !important;
 text-decoration:underline;
 }
 
+
 /* ================= BUTTONS ================= */
 
 .hero-buttons .btn{
@@ -81,47 +128,12 @@ color:#0b5ed7;
 border-radius:6px;
 text-decoration:none;
 font-weight:600;
-}
-/* ================= BUTTONS ================= */
-/* ================= NAVIGATION ================= */
-
-.navbar{
-max-width:1100px;
-margin:18px auto;
-padding:12px 24px;
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-
-background:white;
-border:1px solid #d8dce2;
-border-radius:40px;
-
-box-shadow:0 2px 8px rgba(0,0,0,0.04);
+transition:transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.nav-brand a{
-font-size:20px;
-font-weight:800;
-color:#111;
-text-decoration:none;
-}
-
-.nav-links{
-display:flex;
-align-items:center;
-gap:24px;
-}
-
-.nav-links a{
-color:#444;
-font-weight:500;
-text-decoration:none;
-}
-
-.nav-links a:hover{
-color:#0b5ed7;
+.btn:hover{
+transform:translateY(-1px);
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 
 
@@ -145,7 +157,126 @@ color:#555;
 }
 
 
-/* ================= PAPERS ================= */
+/* ================= SECTIONS ================= */
+
+.section{
+max-width:1000px;
+margin:60px auto;
+padding:0 20px;
+}
+
+.section-inner{
+text-align:justify;
+background:white;
+
+padding:40px;
+
+border-radius:12px;
+
+box-shadow:
+0 2px 6px rgba(0,0,0,0.05),
+0 14px 40px rgba(0,0,0,0.08);
+}
+
+
+/* ================= HEADINGS ================= */
+
+.section h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.section h2::after{
+content:"";
+display:block;
+width:60px;
+height:3px;
+background:#0b5ed7;
+margin:12px auto 0;
+border-radius:2px;
+}
+
+
+/* ================= TEXT ================= */
+
+.section p,
+.section li{
+color:#333;
+}
+
+ul{
+padding-left:22px;
+margin:10px 0;
+}
+
+li{
+margin-bottom:10px;
+}
+
+
+/* ================= GRID LAYOUT ================= */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+
+/* ================= SPEAKER / ORGANIZER CARDS ================= */
+
+.speaker{
+text-align:center;
+}
+
+.speaker img{
+width:120px;
+height:120px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+display:block;
+
+margin:0 auto 10px;
+}
+
+.speaker h3{
+margin:8px 0 4px 0;
+font-size:17px;
+}
+
+.speaker p{
+font-size:14px;
+margin:0;
+}
+
+.speaker a{
+color:#222;
+text-decoration:none;
+}
+
+.speaker a:hover h3{
+color:#0b5ed7;
+}
+
+
+/* ================= PROGRAM COMMITTEE ================= */
+
+.pc-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:4px 20px;
+}
+
+.pc-grid p{
+margin:4px 0;
+line-height:1.35;
+}
+
+
+/* ================= ACCEPTED PAPERS ================= */
 
 .paper-list{
 display:flex;
@@ -156,6 +287,7 @@ gap:22px;
 .paper{
 padding-bottom:20px;
 border-bottom:1px solid #e1e4e8;
+text-align:left;
 }
 
 .paper:last-child{
@@ -181,13 +313,23 @@ color:#555;
 display:grid;
 grid-template-columns:130px 1fr;
 gap:20px;
+
 padding:18px 0;
+
 border-bottom:1px solid #e1e4e8;
+}
+
+.program-item:last-child{
+border-bottom:none;
 }
 
 .program-time{
 font-weight:700;
 color:#0b5ed7;
+}
+
+.program-content{
+text-align:left;
 }
 
 .program-content h3{
@@ -205,130 +347,18 @@ color:#555;
 font-weight:600;
 }
 
+
+/* ================= NEWS ================= */
+
 .news-item{
 margin-bottom:16px;
+text-align:left;
 }
 
 .news-date{
 font-weight:700;
 color:#0b5ed7;
 }
-
-/* ================= SECTIONS ================= */
-
-.section{
-max-width:1000px;
-margin:60px auto;
-padding:0 20px;
-}
-
-.section-inner{
-
-text-align: justify;
-background:white;
-
-padding:40px;
-
-border-radius:12px;
-
-box-shadow:
-0 2px 6px rgba(0,0,0,0.05),
-0 14px 40px rgba(0,0,0,0.08);
-
-}
-
-/* ================= HEADINGS ================= */
-
-.section h2{
-text-align:center;
-margin-bottom:30px;
-}
-
-.section h2::after{
-content:"";
-display:block;
-width:60px;
-height:3px;
-background:#0b5ed7;
-margin:12px auto 0;
-border-radius:2px;
-}
-
-/* ================= TEXT ================= */
-
-.section p,
-.section li{
-color:#333;
-}
-
-ul{
-padding-left:22px;
-margin:10px 0;
-}
-
-li{
-margin-bottom:10px;
-}
-
-/* ================= GRID LAYOUT ================= */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-}
-
-/* ================= SPEAKER / ORGANIZER CARDS ================= */
-
-.speaker{
-
-text-align:center;
-
-}
-
-.speaker img{
-
-width:120px;
-height:120px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-display:block;
-
-margin:0 auto 10px;
-
-}
-
-.speaker h3{
-margin:8px 0 4px 0;
-font-size:17px;
-}
-
-.speaker p{
-font-size:14px;
-margin:0;
-}
-
-/* ================= PROGRAM COMMITTEE ================= */
-
-.pc-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:4px 20px;
-
-}
-
-.pc-grid p{
-  margin:4px 0;
-  line-height:1.35;
-}
-
-/* ================= FOOTER ================= */
 
 
 /* ================= FOOTER ================= */
@@ -341,6 +371,9 @@ color:white;
 margin-top:60px;
 }
 
+footer p{
+color:white;
+}
 
 footer a,
 footer a:link,
@@ -352,54 +385,11 @@ text-decoration:underline;
 footer a:hover{
 color:#e6e6e6 !important;
 }
+
+
 /* ================= MOBILE ================= */
 
 @media(max-width:768px){
-
-.hero{
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:30px;
-}
-
-
-.hero h2{
-font-size:20px;
-font-weight:800;
-}
-
-.hero-sub{
-font-size:20px;
-font-weight:700;
-color:white;
-margin-bottom:15px;
-letter-spacing:0.3px;
-}
-
-.hero-sub a{
-color:white;
-text-decoration:underline;
-font-weight:700;
-}
-
-.hero-sub a:hover{
-color:white;
-text-decoration:underline;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.pc-grid{
-grid-template-columns:1fr;
-}
-
-.section-inner{
-padding:25px;
-}
 
 .navbar{
 margin:10px;
@@ -415,6 +405,48 @@ justify-content:center;
 gap:12px 18px;
 }
 
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:20px;
+font-weight:800;
+}
+
+.hero-sub{
+font-size:17px;
+font-weight:700;
+color:white;
+margin-bottom:15px;
+letter-spacing:0.3px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.pc-grid{
+grid-template-columns:1fr;
+}
+
+.section{
+margin:35px auto;
+padding:0 14px;
+}
+
+.section-inner{
+padding:25px;
+}
+
+.page-header{
+margin-top:35px;
+}
+
 .page-header h1{
 font-size:30px;
 }
@@ -423,5 +455,5 @@ font-size:30px;
 grid-template-columns:1fr;
 gap:5px;
 }
-  
+
 }
