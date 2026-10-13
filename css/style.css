@@ -956,3 +956,140 @@ font-size:14px;
 }
 
 }
+
+
+/* ========================================================= */
+/* INVITED SPEAKER EXPANDABLE CARDS */
+/* ========================================================= */
+
+.invited-speakers-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.invited-speaker-card{
+background:#fff;
+border:1px solid #d7dce2;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 1px 3px rgba(0,0,0,0.05);
+}
+
+.invited-speaker-main{
+padding:20px 22px 10px;
+text-align:left;
+}
+
+.invited-speaker-profile{
+display:block;
+color:#222;
+text-decoration:none;
+}
+
+.invited-speaker-profile img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:4px;
+display:block;
+margin:0 auto 14px;
+}
+
+.invited-speaker-profile h3{
+margin:0 0 3px;
+font-size:18px;
+line-height:1.35;
+color:#111;
+text-decoration:underline;
+}
+
+.invited-speaker-profile:hover h3{
+color:#0b5ed7;
+}
+
+.invited-speaker-affiliation{
+margin:0 !important;
+font-size:13px;
+color:#666 !important;
+text-align:left !important;
+}
+
+.invited-speaker-details{
+border-top:1px solid #e3e6ea;
+}
+
+.invited-speaker-details summary{
+position:relative;
+cursor:pointer;
+list-style:none;
+padding:11px 44px 11px 22px;
+font-size:13px;
+font-weight:600;
+color:#333;
+user-select:none;
+}
+
+.invited-speaker-details summary::-webkit-details-marker{
+display:none;
+}
+
+.invited-speaker-details summary::after{
+content:"⌄";
+position:absolute;
+right:18px;
+top:50%;
+transform:translateY(-50%);
+font-size:17px;
+font-weight:700;
+color:#666;
+transition:transform 0.18s ease;
+}
+
+.invited-speaker-details[open] summary::after{
+transform:translateY(-50%) rotate(180deg);
+}
+
+.invited-speaker-expanded{
+padding:0 22px 20px;
+text-align:left;
+}
+
+.invited-speaker-expanded p{
+text-align:left !important;
+margin:8px 0;
+font-size:14px;
+}
+
+.invited-speaker-expanded h4{
+margin:16px 0 6px;
+padding-top:12px;
+border-top:1px solid #e3e6ea;
+font-size:14px;
+}
+
+.speaker-placeholder{
+color:#777;
+font-style:italic;
+}
+
+@media(max-width:768px){
+
+.invited-speaker-main{
+padding:18px 18px 9px;
+}
+
+.invited-speaker-profile img{
+width:125px;
+height:125px;
+}
+
+.invited-speaker-details summary{
+padding:10px 40px 10px 18px;
+}
+
+.invited-speaker-expanded{
+padding:0 18px 18px;
+}
+
+}
