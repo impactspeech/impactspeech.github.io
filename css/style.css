@@ -1,4 +1,14 @@
-/* ================= GLOBAL ================= */
+/* ========================================================= */
+/* GLOBAL */
+/* ========================================================= */
+
+*{
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -9,7 +19,9 @@ color:#222;
 }
 
 
-/* ================= HERO ================= */
+/* ========================================================= */
+/* HERO */
+/* ========================================================= */
 
 .hero{
 position:relative;
@@ -35,23 +47,29 @@ margin:auto;
 
 .hero h1{
 font-size:42px;
-margin-bottom:10px;
+margin:0 0 10px;
 }
 
 .hero h2{
 font-weight:800;
 max-width:900px;
+
 margin:0 auto 30px;
+
 font-size:30px;
 color:white;
+
 text-shadow:0 3px 8px rgba(0,0,0,0.6);
 }
 
 .hero-sub{
 font-size:20px;
 font-weight:700;
+
 color:white;
-margin-bottom:15px;
+
+margin-bottom:18px;
+
 letter-spacing:0.3px;
 }
 
@@ -69,13 +87,16 @@ text-decoration:underline;
 }
 
 
-/* ================= HERO BUTTONS ================= */
+/* ========================================================= */
+/* HERO BUTTONS */
+/* ========================================================= */
 
 .hero-buttons{
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 flex-wrap:wrap;
+
 gap:10px;
 }
 
@@ -85,10 +106,14 @@ margin:0;
 
 .btn{
 display:inline-block;
+
 padding:10px 18px;
+
 background:white;
 color:#0b5ed7;
+
 border-radius:6px;
+
 text-decoration:none;
 font-weight:600;
 
@@ -99,16 +124,23 @@ box-shadow 0.15s ease;
 
 .btn:hover{
 transform:translateY(-1px);
-box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+box-shadow:
+0 4px 10px rgba(0,0,0,0.15);
 }
 
 
-/* ================= PAGE HEADER ================= */
+/* ========================================================= */
+/* PAGE HEADER */
+/* ========================================================= */
 
 .page-header{
 max-width:1000px;
+
 margin:55px auto 20px;
+
 padding:0 20px;
+
 text-align:center;
 }
 
@@ -123,17 +155,23 @@ color:#555;
 }
 
 
-/* ================= SECTIONS ================= */
+/* ========================================================= */
+/* MAIN SECTIONS */
+/* ========================================================= */
 
 .section{
 max-width:1000px;
+
 margin:60px auto;
+
 padding:0 20px;
 }
 
 .section-inner{
 background:white;
+
 padding:40px;
+
 border-radius:12px;
 
 box-shadow:
@@ -142,16 +180,20 @@ box-shadow:
 }
 
 
-/* ================= HEADINGS ================= */
+/* ========================================================= */
+/* HEADINGS */
+/* ========================================================= */
 
 .section h2{
 text-align:center;
+
 margin-top:0;
 margin-bottom:30px;
 }
 
 .section h2::after{
 content:"";
+
 display:block;
 
 width:60px;
@@ -165,14 +207,16 @@ border-radius:2px;
 }
 
 
-/* ================= TEXT ================= */
+/* ========================================================= */
+/* TEXT */
+/* ========================================================= */
 
 .section p,
 .section li{
 color:#333;
 }
 
-.section > .section-inner > p{
+.section-inner > p{
 text-align:justify;
 }
 
@@ -186,7 +230,9 @@ margin-bottom:10px;
 }
 
 
-/* ================= IMPORTANT DATES ================= */
+/* ========================================================= */
+/* IMPORTANT DATES */
+/* ========================================================= */
 
 .dates-intro{
 text-align:left !important;
@@ -194,65 +240,70 @@ margin-bottom:18px;
 }
 
 .important-dates{
-border:1px solid #e0e4e9;
-border-radius:8px;
-overflow:hidden;
+width:100%;
 }
 
-.date-row{
-display:grid;
-grid-template-columns:1.5fr 1fr;
-gap:20px;
+.date-line{
+display:flex;
+align-items:baseline;
 
-padding:14px 18px;
+gap:8px;
 
-border-bottom:1px solid #e1e4e8;
+padding:6px 0;
 
-align-items:center;
+font-size:16px;
+line-height:1.5;
 }
 
-.date-row:last-child{
-border-bottom:none;
+.date-line > strong{
+flex:0 0 auto;
 }
 
-.date-label{
-font-weight:600;
-color:#222;
+.date-line > span{
+display:inline;
 }
 
-.date-value{
-text-align:left;
-color:#333;
-}
-
-.date-value s{
-color:#888;
-}
-
-.date-arrow{
-padding:0 8px;
+.date-line s{
 color:#777;
 }
 
+.date-arrow{
+display:inline-block;
+
+padding:0 5px;
+
+color:#555;
+}
+
 .dates-note{
-text-align:center !important;
-font-size:14px;
-font-style:italic;
-margin-top:18px;
+margin-top:20px !important;
 margin-bottom:0;
+
+font-style:italic;
+
+font-size:14px;
+
+text-align:left !important;
 }
 
 
-/* ================= GRID LAYOUT ================= */
+/* ========================================================= */
+/* GRID */
+/* ========================================================= */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
 gap:30px;
 }
 
 
-/* ================= SPEAKER / ORGANIZER CARDS ================= */
+/* ========================================================= */
+/* SPEAKER / ORGANIZER CARDS */
+/* ========================================================= */
 
 .speaker{
 text-align:center;
@@ -273,12 +324,15 @@ margin:0 auto 10px;
 
 .speaker h3{
 margin:8px 0 4px;
+
 font-size:17px;
 }
 
 .speaker p{
 font-size:14px;
+
 margin:0;
+
 text-align:center !important;
 }
 
@@ -292,32 +346,46 @@ color:#0b5ed7;
 }
 
 
-/* ================= PROGRAM COMMITTEE ================= */
+/* ========================================================= */
+/* PROGRAM COMMITTEE */
+/* ========================================================= */
 
 .pc-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
+
+grid-template-columns:
+1fr 1fr;
+
 gap:4px 20px;
 }
 
 .pc-grid p{
 margin:4px 0;
+
 line-height:1.35;
+
 text-align:left !important;
 }
 
 
-/* ================= ACCEPTED PAPERS PAGE ================= */
+/* ========================================================= */
+/* ACCEPTED PAPERS PAGE */
+/* ========================================================= */
 
 .paper-list{
 display:flex;
+
 flex-direction:column;
+
 gap:22px;
 }
 
 .paper{
 padding-bottom:20px;
-border-bottom:1px solid #e1e4e8;
+
+border-bottom:
+1px solid #e1e4e8;
+
 text-align:left;
 }
 
@@ -327,135 +395,204 @@ border-bottom:none;
 
 .paper h3{
 font-size:18px;
+
 margin:0 0 6px;
+
 line-height:1.45;
 }
 
 .paper p{
 margin:0;
+
 font-size:15px;
+
 color:#555;
+
 text-align:left !important;
 }
 
 
-/* ================= PROGRAM ================= */
+/* ========================================================= */
+/* PROGRAM TABLE */
+/* ========================================================= */
+
+.program-section .section-inner{
+padding:40px;
+}
 
 .program-table{
-border:1px solid #dfe3e8;
+width:100%;
+
+border:
+1px solid #d7dce2;
+
 border-radius:8px;
+
 overflow:hidden;
-background:white;
+
+background:#fff;
 }
 
-.schedule-row{
+
+/* individual schedule row */
+
+.program-row{
 display:grid;
-grid-template-columns:150px 1fr;
 
-border-bottom:1px solid #dfe3e8;
+grid-template-columns:
+150px minmax(0,1fr);
+
+border-bottom:
+1px solid #d7dce2;
 }
 
-.schedule-row:last-child{
+.program-row:last-child{
 border-bottom:none;
 }
 
-.schedule-time{
-padding:17px 16px;
+
+/* left column */
+
+.program-time{
+padding:17px 18px;
 
 font-size:14px;
 font-weight:700;
 
+line-height:1.5;
+
 color:#222;
 
-border-right:1px solid #e2e5e9;
+border-right:
+1px solid #d7dce2;
 
 white-space:nowrap;
 }
 
-.schedule-content{
-padding:17px 18px;
+
+/* right column */
+
+.program-event{
+min-width:0;
+
+padding:17px 20px;
+
 text-align:left;
 }
 
-.schedule-content > strong{
+.program-event > strong{
 font-size:15px;
+
+line-height:1.45;
 }
 
-.schedule-meta{
+.program-meta{
 margin-top:3px;
+
 font-size:13px;
+
 color:#666;
 }
 
-.schedule-break{
-background:#fafbfc;
+
+/* break rows */
+
+.program-break{
+background:#fafafa;
 }
 
-.session-heading{
+
+/* ========================================================= */
+/* SESSION TITLES */
+/* ========================================================= */
+
+.session-title{
 font-size:16px;
+
 font-weight:700;
-margin-bottom:2px;
+
+margin-bottom:3px;
 }
 
-.session-subtitle{
+.session-description{
 font-size:14px;
+
 color:#555;
+
+margin-bottom:4px;
 }
 
 .session-note{
 display:inline-block;
 
-margin-top:7px;
-margin-bottom:9px;
+margin-top:4px;
+margin-bottom:14px;
 
 padding:3px 8px;
 
-background:#eef4ff;
-color:#0b5ed7;
-
-border-radius:4px;
-
 font-size:12px;
 font-weight:600;
+
+color:#0b5ed7;
+
+background:#eef4ff;
+
+border-radius:4px;
 }
 
 
-/* ================= ORAL PAPERS ================= */
+/* ========================================================= */
+/* ORAL PRESENTATIONS */
+/* ========================================================= */
 
-.program-paper{
+.oral-list{
+margin-top:8px;
+}
+
+.oral-item{
 display:grid;
-grid-template-columns:100px 1fr;
+
+grid-template-columns:
+105px minmax(0,1fr);
+
 gap:14px;
 
 padding:14px 0;
 
-border-top:1px solid #eceff2;
+border-top:
+1px solid #e3e6ea;
 }
 
-.program-paper:first-of-type{
-margin-top:8px;
-}
-
-.paper-time{
+.oral-time{
 font-size:12px;
+
 font-weight:600;
+
+line-height:1.45;
+
 color:#555;
 }
 
-.paper-info strong{
+.oral-details{
+min-width:0;
+}
+
+.oral-details strong{
 display:block;
 
 font-size:14px;
+
 line-height:1.45;
 
-margin-bottom:3px;
+margin-bottom:4px;
 }
 
-.paper-info span{
+.oral-details span{
 display:block;
 
 font-size:13px;
-line-height:1.4;
+
+line-height:1.45;
 
 color:#666;
 
@@ -463,19 +600,25 @@ font-style:italic;
 }
 
 
-/* ================= POSTER DETAILS ================= */
+/* ========================================================= */
+/* POSTER SESSION */
+/* ========================================================= */
 
-.poster-details{
+.poster-box{
 margin-top:10px;
 
-border:1px solid #dfe3e8;
+border:
+1px solid #d9dee4;
+
 border-radius:6px;
 
 background:#fafbfc;
+
+overflow:hidden;
 }
 
-.poster-details summary{
-padding:10px 12px;
+.poster-box summary{
+padding:11px 13px;
 
 cursor:pointer;
 
@@ -483,44 +626,56 @@ font-size:13px;
 font-weight:600;
 
 color:#333;
+
+list-style-position:inside;
 }
 
-.poster-details[open] summary{
-border-bottom:1px solid #e1e4e8;
+.poster-box[open] summary{
+border-bottom:
+1px solid #dfe3e8;
 }
 
-.poster-entry{
-padding:12px;
-
-border-bottom:1px solid #e7e9ec;
+.poster-content{
+background:white;
 }
 
-.poster-entry:last-child{
+.poster-paper{
+padding:13px 14px;
+
+border-bottom:
+1px solid #e7e9ec;
+}
+
+.poster-paper:last-child{
 border-bottom:none;
 }
 
-.poster-entry strong{
+.poster-paper strong{
 display:block;
 
 font-size:13px;
+
 line-height:1.45;
 
 margin-bottom:3px;
 }
 
-.poster-entry span{
+.poster-paper span{
 display:block;
 
 font-size:12px;
+
+line-height:1.4;
 
 color:#666;
 
 font-style:italic;
 }
 
-.poster-note{
-padding:10px 12px;
+.poster-session-note{
 margin:0 !important;
+
+padding:12px 14px;
 
 font-size:13px;
 
@@ -528,25 +683,32 @@ text-align:left !important;
 }
 
 
-/* ================= NEWS ================= */
+/* ========================================================= */
+/* NEWS */
+/* ========================================================= */
 
 .news-item{
 margin-bottom:16px;
+
 text-align:left;
 }
 
 .news-date{
 font-weight:700;
+
 color:#0b5ed7;
 }
 
 
-/* ================= BACK TO MAIN PAGE ================= */
+/* ========================================================= */
+/* BACK TO MAIN PAGE */
+/* ========================================================= */
 
 .back-home{
 width:100%;
 
 display:flex;
+
 justify-content:center;
 align-items:center;
 
@@ -566,7 +728,8 @@ border-radius:7px;
 text-decoration:none;
 font-weight:600;
 
-box-shadow:0 3px 8px rgba(0,0,0,0.10);
+box-shadow:
+0 3px 8px rgba(0,0,0,0.10);
 
 transition:
 background 0.2s ease,
@@ -580,12 +743,16 @@ color:white;
 
 .back-home-btn:hover{
 background:#084298;
+
 color:white;
+
 transform:translateY(-1px);
 }
 
 
-/* ================= FOOTER ================= */
+/* ========================================================= */
+/* FOOTER */
+/* ========================================================= */
 
 footer{
 text-align:center;
@@ -606,6 +773,7 @@ footer a,
 footer a:link,
 footer a:visited{
 color:white !important;
+
 text-decoration:underline;
 }
 
@@ -614,9 +782,14 @@ color:#e6e6e6 !important;
 }
 
 
-/* ================= MOBILE ================= */
+/* ========================================================= */
+/* MOBILE */
+/* ========================================================= */
 
 @media(max-width:768px){
+
+
+/* HERO */
 
 .hero{
 padding:80px 20px;
@@ -628,12 +801,14 @@ font-size:30px;
 
 .hero h2{
 font-size:20px;
-font-weight:800;
 }
 
 .hero-sub{
 font-size:17px;
 }
+
+
+/* BUTTONS */
 
 .hero-buttons{
 gap:8px;
@@ -641,25 +816,25 @@ gap:8px;
 
 .btn{
 padding:9px 14px;
+
 font-size:14px;
 }
 
-.grid{
-grid-template-columns:1fr;
-}
 
-.pc-grid{
-grid-template-columns:1fr;
-}
+/* SECTIONS */
 
 .section{
 margin:35px auto;
+
 padding:0 14px;
 }
 
 .section-inner{
 padding:25px;
 }
+
+
+/* PAGE HEADER */
 
 .page-header{
 margin-top:35px;
@@ -670,44 +845,73 @@ font-size:30px;
 }
 
 
-/* IMPORTANT DATES MOBILE */
+/* GRID */
 
-.date-row{
-grid-template-columns:1fr;
-gap:5px;
-}
-
-.date-value{
-padding-bottom:2px;
-}
-
-
-/* PROGRAM MOBILE */
-
-.schedule-row{
+.grid{
 grid-template-columns:1fr;
 }
 
-.schedule-time{
-padding:12px 14px 4px;
 
-border-right:none;
+/* PROGRAM COMMITTEE */
 
-color:#0b5ed7;
-}
-
-.schedule-content{
-padding:5px 14px 15px;
-}
-
-.program-paper{
+.pc-grid{
 grid-template-columns:1fr;
+}
+
+
+/* IMPORTANT DATES */
+
+.date-line{
+display:block;
+
+padding:7px 0;
+}
+
+.date-line > strong{
+display:inline;
+}
+
+.date-line > span{
+display:inline;
+}
+
+
+/* PROGRAM */
+
+.program-section .section-inner{
+padding:22px;
+}
+
+.program-row{
+grid-template-columns:
+110px minmax(0,1fr);
+}
+
+.program-time{
+padding:14px 10px;
+
+font-size:12px;
+}
+
+.program-event{
+padding:14px;
+}
+
+
+/* ORAL PAPERS */
+
+.oral-item{
+grid-template-columns:1fr;
+
 gap:3px;
 }
 
-.paper-time{
+.oral-time{
 color:#0b5ed7;
 }
+
+
+/* BACK BUTTON */
 
 .back-home{
 margin:35px 0;
@@ -715,6 +919,39 @@ margin:35px 0;
 
 .back-home-btn{
 padding:10px 18px;
+
+font-size:14px;
+}
+
+}
+
+
+/* ========================================================= */
+/* SMALL MOBILE */
+/* ========================================================= */
+
+@media(max-width:520px){
+
+.program-row{
+display:block;
+}
+
+.program-time{
+border-right:none;
+
+border-bottom:
+1px solid #eef0f2;
+
+padding:10px 14px 4px;
+
+color:#0b5ed7;
+}
+
+.program-event{
+padding:10px 14px 16px;
+}
+
+.date-line{
 font-size:14px;
 }
 
