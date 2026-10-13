@@ -82,6 +82,137 @@ border-radius:6px;
 text-decoration:none;
 font-weight:600;
 }
+/* ================= BUTTONS ================= */
+/* ================= NAVIGATION ================= */
+
+.navbar{
+max-width:1100px;
+margin:18px auto;
+padding:12px 24px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+background:white;
+border:1px solid #d8dce2;
+border-radius:40px;
+
+box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+
+.nav-brand a{
+font-size:20px;
+font-weight:800;
+color:#111;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+.nav-links a{
+color:#444;
+font-weight:500;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+color:#0b5ed7;
+}
+
+
+/* ================= PAGE HEADER ================= */
+
+.page-header{
+max-width:1000px;
+margin:55px auto 20px;
+padding:0 20px;
+text-align:center;
+}
+
+.page-header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.page-header p{
+font-size:17px;
+color:#555;
+}
+
+
+/* ================= PAPERS ================= */
+
+.paper-list{
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.paper{
+padding-bottom:20px;
+border-bottom:1px solid #e1e4e8;
+}
+
+.paper:last-child{
+border-bottom:none;
+}
+
+.paper h3{
+font-size:18px;
+margin:0 0 6px 0;
+line-height:1.45;
+}
+
+.paper p{
+margin:0;
+font-size:15px;
+color:#555;
+}
+
+
+/* ================= PROGRAM ================= */
+
+.program-item{
+display:grid;
+grid-template-columns:130px 1fr;
+gap:20px;
+padding:18px 0;
+border-bottom:1px solid #e1e4e8;
+}
+
+.program-time{
+font-weight:700;
+color:#0b5ed7;
+}
+
+.program-content h3{
+margin:0 0 5px 0;
+font-size:17px;
+}
+
+.program-content p{
+margin:0;
+font-size:14px;
+color:#555;
+}
+
+.program-break{
+font-weight:600;
+}
+
+.news-item{
+margin-bottom:16px;
+}
+
+.news-date{
+font-weight:700;
+color:#0b5ed7;
+}
 
 /* ================= SECTIONS ================= */
 
@@ -270,4 +401,27 @@ grid-template-columns:1fr;
 padding:25px;
 }
 
+.navbar{
+margin:10px;
+padding:14px 18px;
+flex-direction:column;
+gap:12px;
+border-radius:18px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px 18px;
+}
+
+.page-header h1{
+font-size:30px;
+}
+
+.program-item{
+grid-template-columns:1fr;
+gap:5px;
+}
+  
 }
