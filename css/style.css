@@ -435,6 +435,51 @@ color:#333;
 }
 
 
+
+/* ========================================================= */
+/* KEYNOTE ABSTRACT DROPDOWN */
+/* ========================================================= */
+
+.keynote-abstract{
+margin-top:12px;
+border:1px solid #d9dee4;
+border-radius:6px;
+background:#fafbfc;
+overflow:hidden;
+}
+
+.keynote-abstract summary{
+padding:10px 12px;
+cursor:pointer;
+font-size:13px;
+font-weight:700;
+color:#0b5ed7;
+list-style-position:inside;
+user-select:none;
+}
+
+.keynote-abstract summary:hover{
+background:#f2f6ff;
+}
+
+.keynote-abstract[open] summary{
+border-bottom:1px solid #dfe3e8;
+}
+
+.keynote-abstract-content{
+background:#fff;
+padding:12px 14px 14px;
+}
+
+.keynote-abstract-content p{
+margin:0;
+font-size:13px;
+line-height:1.6;
+color:#444;
+text-align:justify;
+}
+
+
 /* ========================================================= */
 /* SESSION TITLES */
 /* ========================================================= */
@@ -657,6 +702,22 @@ color:#e6e6e6 !important;
 /* ========================================================= */
 
 @media(max-width:768px){
+
+.keynote-abstract summary{
+font-size:12px;
+padding:9px 10px;
+}
+
+.keynote-abstract-content{
+padding:10px 12px 12px;
+}
+
+.keynote-abstract-content p{
+font-size:12px;
+text-align:left;
+}
+
+
 
 .hero{
 padding:80px 20px;
