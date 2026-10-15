@@ -357,6 +357,10 @@ text-align:left !important;
 /* PROGRAM TABLE */
 /* ========================================================= */
 
+.program-section{
+scroll-margin-top:20px;
+}
+
 .program-section .section-inner{
 padding:40px;
 }
@@ -433,7 +437,6 @@ font-size:14px;
 line-height:1.5;
 color:#333;
 }
-
 
 
 /* ========================================================= */
@@ -571,6 +574,10 @@ font-size:13px;
 font-weight:600;
 color:#333;
 list-style-position:inside;
+}
+
+.poster-box summary:hover{
+background:#f2f6ff;
 }
 
 .poster-box[open] summary{
@@ -716,7 +723,6 @@ padding:10px 12px 12px;
 font-size:12px;
 text-align:left;
 }
-
 
 
 .hero{
