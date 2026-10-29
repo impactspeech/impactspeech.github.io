@@ -10,91 +10,141 @@
 href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
 rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=20261015-accepted-publication-status">
+<link rel="stylesheet" href="css/style.css?v=20261029-accepted-paper-links">
 
 <style>
-/* Accepted-papers page only */
+
+/* =========================================================
+   ACCEPTED PAPERS PAGE
+   ========================================================= */
 
 .accepted-paper-list{
-display:flex;
-flex-direction:column;
-gap:0;
+    display:flex;
+    flex-direction:column;
+    gap:0;
 }
 
 .accepted-paper{
-padding:18px 0;
-border-bottom:1px solid #dfe3e8;
-text-align:left;
+    padding:18px 0;
+    border-bottom:1px solid #dfe3e8;
+    text-align:left;
 }
 
 .accepted-paper:first-child{
-padding-top:0;
+    padding-top:0;
 }
 
 .accepted-paper:last-child{
-border-bottom:none;
-padding-bottom:0;
+    border-bottom:none;
+    padding-bottom:0;
 }
 
 .accepted-paper h3{
-margin:0 0 6px;
-font-size:17px;
-line-height:1.45;
-color:#222;
+    margin:0 0 6px;
+    font-size:17px;
+    line-height:1.45;
+    color:#222;
 }
 
 .accepted-paper-authors{
-margin:0 !important;
-font-size:14px;
-line-height:1.5;
-color:#555 !important;
-text-align:left !important;
+    margin:0 !important;
+    font-size:14px;
+    line-height:1.5;
+    color:#555 !important;
+    text-align:left !important;
 }
 
+
+/* =========================================================
+   ARCHIVAL / NON-ARCHIVAL TAG
+   ========================================================= */
+
 .publication-tag{
-font-size:13px;
-font-weight:700;
-color:#0b5ed7;
-white-space:nowrap;
+    font-size:13px;
+    font-weight:700;
+    color:#0b5ed7;
+    white-space:nowrap;
 }
+
+
+/* =========================================================
+   PAPER ACCESS LINK
+   ========================================================= */
+
+.paper-link{
+    display:inline-block;
+    margin-left:8px;
+
+    font-size:13px;
+    font-weight:700;
+
+    color:#198754;
+    text-decoration:none;
+
+    white-space:nowrap;
+}
+
+.paper-link:hover{
+    color:#146c43;
+    text-decoration:underline;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media(max-width:768px){
-.accepted-paper{
-padding:16px 0;
+
+    .accepted-paper{
+        padding:16px 0;
+    }
+
+    .accepted-paper h3{
+        font-size:16px;
+    }
+
+    .accepted-paper-authors{
+        font-size:13px;
+    }
+
+    .publication-tag{
+        font-size:12px;
+    }
+
+    .paper-link{
+        font-size:12px;
+        margin-left:6px;
+    }
 }
 
-.accepted-paper h3{
-font-size:16px;
-}
-
-.accepted-paper-authors{
-font-size:13px;
-}
-
-.publication-tag{
-font-size:12px;
-}
-}
 </style>
 
 </head>
 
+
 <body>
 
-<!-- ================= PAGE HEADER ================= -->
+
+<!-- =========================================================
+     PAGE HEADER
+     ========================================================= -->
 
 <div class="page-header">
 
-<h1>Accepted Papers</h1>
+    <h1>Accepted Papers</h1>
 
-<p>
-IMPACT-SPEECH 2026 • Co-located with EMNLP 2026
-</p>
+    <p>
+        IMPACT-SPEECH 2026 • Co-located with EMNLP 2026
+    </p>
 
 </div>
 
 
-<!-- ================= ACCEPTED PAPERS ================= -->
+
+<!-- =========================================================
+     ACCEPTED PAPERS
+     ========================================================= -->
 
 <section class="section">
 
@@ -102,105 +152,574 @@ IMPACT-SPEECH 2026 • Co-located with EMNLP 2026
 
 <div class="accepted-paper-list">
 
-<article class="accepted-paper">
-  <h3>Can Large Audio-Language Models Ignore Multilingual Distractors? An Evaluation of Their Selective Auditory Attention Capabilities <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Heejoon Koo</p>
-</article>
+
+
+<!-- PAPER 01 -->
 
 <article class="accepted-paper">
-  <h3>Evaluating Bias in Phoneme-Based Automatic Speech Recognition Systems: An Analysis of IPA Transcription Models <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Maneesha Rani Saha; Catherine Bao; Neal Patwari</p>
+
+    <h3>
+        Can Large Audio-Language Models Ignore Multilingual Distractors?
+        An Evaluation of Their Selective Auditory Attention Capabilities
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-01.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Heejoon Koo
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Temporal Taxation Compounds Under Post-Training Compression of Whisper Models <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Srishti Ginjala; Eric Fosler-Lussier; Christopher W. Myers; Srinivasan Parthasarathy</p>
-</article>
+
+
+<!-- PAPER 02 -->
 
 <article class="accepted-paper">
-  <h3>What Drives Dialectal Jailbreaks? An Ablation of Surface Form, Cultural Framing, and Strategy Banks <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Qingyang Xu</p>
+
+    <h3>
+        Evaluating Bias in Phoneme-Based Automatic Speech Recognition Systems:
+        An Analysis of IPA Transcription Models
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-02.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Maneesha Rani Saha; Catherine Bao; Neal Patwari
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Ganesh Pavan Kartikeya Bharadwaj Kolluri; Michael Kampouridis; Ravi Shekhar</p>
-</article>
+
+
+<!-- PAPER 03 -->
 
 <article class="accepted-paper">
-  <h3>TurkSV-Bench: Assessing Demographic Bias and Preprocessing Effects in Speaker Verification <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Ahmet Berkay Kantarcı; Abdulkadir Parlak; Ahmet Karazor</p>
+
+    <h3>
+        Temporal Taxation Compounds Under Post-Training Compression of Whisper Models
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-03.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Srishti Ginjala; Eric Fosler-Lussier; Christopher W. Myers;
+        Srinivasan Parthasarathy
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Lost in Compression: Calibration Bias and the Accent-WER Gap in Speech LLMs <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Angad Ripudaman Singh Bajwa</p>
-</article>
+
+
+<!-- PAPER 04 -->
+<!-- YOUR PROVIDED GOOGLE DRIVE LINK -->
 
 <article class="accepted-paper">
-  <h3>A Probe Shift Is Not a Fairness Fix: The Limits of Representation Steering in Speech Models <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Nicolas Bourrel; Abderrahmane Issam; Gerasimos Spanakis</p>
+
+    <h3>
+        What Drives Dialectal Jailbreaks? An Ablation of Surface Form,
+        Cultural Framing, and Strategy Banks
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://drive.google.com/file/d/1a7HKSEubFv2TFX0zXea7JzPDzspjPwCU/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Qingyang Xu
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>AIP-Speech: Auditing Speech LLM Robustness to Background Interference <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Aiden Dsouza; Shreyansh Mishra; Yashraj Suneja; Rohan Swain; Samyak Borkar; Arjun Jaishankar; Tanmay Urade</p>
-</article>
+
+
+<!-- PAPER 05 -->
 
 <article class="accepted-paper">
-  <h3>Early Warning for Target-Speaker Extraction: Reliability under Distribution and Failure-Definition Shift <span class="publication-tag">[Archival]</span></h3>
-  <p class="accepted-paper-authors">Shubham Sharma; Manik Gupta</p>
+
+    <h3>
+        Pruning for Efficiency, Paying in Fairness:
+        Demographic Disparities in Pruned Speech-LLMs
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-05.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Ganesh Pavan Kartikeya Bharadwaj Kolluri;
+        Michael Kampouridis;
+        Ravi Shekhar
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Detecting Mental Manipulation in Speech via Synthetic Multi-Speaker Dialogue <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Run Chen; Wen Liang; Ziwei Gong; Lin Ai; Julia Hirschberg</p>
-</article>
+
+
+<!-- PAPER 06 -->
 
 <article class="accepted-paper">
-  <h3>KanAdapter: A Kolmogorov-Arnold Network-based Plug-and-Play Module for Efficient Fine-tuning of Foundation Speech Models <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Tuan Dat Phuong</p>
+
+    <h3>
+        TurkSV-Bench: Assessing Demographic Bias and Preprocessing Effects
+        in Speaker Verification
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-06.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Ahmet Berkay Kantarcı; Abdulkadir Parlak; Ahmet Karazor
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Syeda Faiza Ahmed Sara; Zien Sheikh Ali; Hunzalah Hassan Bhatti; Firoj Alam; Shammur Absar Chowdhury</p>
-</article>
+
+
+<!-- PAPER 07 -->
 
 <article class="accepted-paper">
-  <h3>Personalization Without Stereotyping: Do Speech LLMs Know When to Turn a Deaf Ear? <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Kshitij Ambilduke; Caroline Brun; Thibaut Thonet; Vassilina Nikoulina; Marcely Zanon Boito</p>
+
+    <h3>
+        Lost in Compression:
+        Calibration Bias and the Accent-WER Gap in Speech LLMs
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-07.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Angad Ripudaman Singh Bajwa
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Evaluating WhisperX Transcriptions of Korean Child-Directed Speech through Linguistic Analysis <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Ioana Buhnila; Jiho Lee; Sung Hyu Chon; Jae-Hun Jung; Eon-Suk Ko</p>
-</article>
+
+
+<!-- PAPER 08 -->
 
 <article class="accepted-paper">
-  <h3>Auditing Spoken Correction Uptake and Retention in Speech LLMs <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Yoonhyuk Choi</p>
+
+    <h3>
+        A Probe Shift Is Not a Fairness Fix:
+        The Limits of Representation Steering in Speech Models
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-08.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Nicolas Bourrel; Abderrahmane Issam; Gerasimos Spanakis
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Dialect Gaps in Tamil Speech Recognition: A Paired Evaluation of Erode and Common Spoken Tamil <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Dharunish Yugeswardeenoo</p>
-</article>
+
+
+<!-- PAPER 09 -->
 
 <article class="accepted-paper">
-  <h3>Steering ASR systems towards domain adaptation and personalization <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Felix Herron; Alex Colagrande; Solange Rossato; François Portet; Alexandre Allauzen; Chuyan Li</p>
+
+    <h3>
+        AIP-Speech:
+        Auditing Speech LLM Robustness to Background Interference
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-09.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Aiden Dsouza; Shreyansh Mishra; Yashraj Suneja;
+        Rohan Swain; Samyak Borkar; Arjun Jaishankar; Tanmay Urade
+    </p>
+
 </article>
 
-<article class="accepted-paper">
-  <h3>Responsible Benchmarking of Fairness for Automatic Speech Recognition <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Felix Herron; Ange Richard; François Portet; Alexandre Allauzen; Solange Rossato</p>
-</article>
+
+
+<!-- PAPER 10 -->
 
 <article class="accepted-paper">
-  <h3>Zero-Shot Spoken Language Understanding with SLAM-ASR: What Do Monolingual ASR-Trained Linear Projectors Enable? <span class="publication-tag">[Non-Archival]</span></h3>
-  <p class="accepted-paper-authors">Edwin Arkel Rios; Sneh Sourabh; Jocelyn Zaruma; Girish Ewoorkar; Julian Mack; Bo-Cheng Lai</p>
+
+    <h3>
+        Early Warning for Target-Speaker Extraction:
+        Reliability under Distribution and Failure-Definition Shift
+
+        <span class="publication-tag">[Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-10.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Shubham Sharma; Manik Gupta
+    </p>
+
 </article>
+
+
+
+<!-- PAPER 11 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Detecting Mental Manipulation in Speech via Synthetic Multi-Speaker Dialogue
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-11.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Run Chen; Wen Liang; Ziwei Gong; Lin Ai; Julia Hirschberg
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 12 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        KanAdapter:
+        A Kolmogorov-Arnold Network-based Plug-and-Play Module
+        for Efficient Fine-tuning of Foundation Speech Models
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-12.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Tuan Dat Phuong
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 13 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Multi-turn Conversational AI from Text to Multimodal Interaction:
+        Data, Models, Evaluation, and Open Challenges
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-13.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Syeda Faiza Ahmed Sara;
+        Zien Sheikh Ali;
+        Hunzalah Hassan Bhatti;
+        Firoj Alam;
+        Shammur Absar Chowdhury
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 14 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Personalization Without Stereotyping:
+        Do Speech LLMs Know When to Turn a Deaf Ear?
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-14.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Kshitij Ambilduke;
+        Caroline Brun;
+        Thibaut Thonet;
+        Vassilina Nikoulina;
+        Marcely Zanon Boito
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 15 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Evaluating WhisperX Transcriptions of Korean Child-Directed Speech
+        through Linguistic Analysis
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-15.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Ioana Buhnila;
+        Jiho Lee;
+        Sung Hyu Chon;
+        Jae-Hun Jung;
+        Eon-Suk Ko
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 16 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Auditing Spoken Correction Uptake and Retention in Speech LLMs
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-16.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Yoonhyuk Choi
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 17 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Dialect Gaps in Tamil Speech Recognition:
+        A Paired Evaluation of Erode and Common Spoken Tamil
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-17.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Dharunish Yugeswardeenoo
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 18 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Steering ASR systems towards domain adaptation and personalization
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-18.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Felix Herron;
+        Alex Colagrande;
+        Solange Rossato;
+        François Portet;
+        Alexandre Allauzen;
+        Chuyan Li
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 19 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Responsible Benchmarking of Fairness for Automatic Speech Recognition
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-19.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Felix Herron;
+        Ange Richard;
+        François Portet;
+        Alexandre Allauzen;
+        Solange Rossato
+    </p>
+
+</article>
+
+
+
+<!-- PAPER 20 -->
+
+<article class="accepted-paper">
+
+    <h3>
+        Zero-Shot Spoken Language Understanding with SLAM-ASR:
+        What Do Monolingual ASR-Trained Linear Projectors Enable?
+
+        <span class="publication-tag">[Non-Archival]</span>
+
+        <a
+        class="paper-link"
+        href="https://example.com/paper-20.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        [Paper]
+        </a>
+    </h3>
+
+    <p class="accepted-paper-authors">
+        Edwin Arkel Rios;
+        Sneh Sourabh;
+        Jocelyn Zaruma;
+        Girish Ewoorkar;
+        Julian Mack;
+        Bo-Cheng Lai
+    </p>
+
+</article>
+
+
 
 </div>
 
@@ -209,35 +728,43 @@ IMPACT-SPEECH 2026 • Co-located with EMNLP 2026
 </section>
 
 
-<!-- ================= BACK TO MAIN PAGE ================= -->
+
+<!-- =========================================================
+     BACK TO MAIN PAGE
+     ========================================================= -->
 
 <div class="back-home">
 
-<a href="index.html" class="back-home-btn">
-← Back to Main Page
-</a>
+    <a href="index.html" class="back-home-btn">
+        ← Back to Main Page
+    </a>
 
 </div>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
 <footer>
 
-<p>
-Contact:
-<strong>
-<a href="mailto:impactspeech.workshop@gmail.com">
-impactspeech.workshop@gmail.com
-</a>
-</strong>
-</p>
+    <p>
+        Contact:
+        <strong>
+            <a href="mailto:impactspeech.workshop@gmail.com">
+                impactspeech.workshop@gmail.com
+            </a>
+        </strong>
+    </p>
 
-<p>
-© 2026 IMPACT-SPEECH Workshop
-</p>
+    <p>
+        © 2026 IMPACT-SPEECH Workshop
+    </p>
 
 </footer>
 
+
 </body>
+
 </html>
